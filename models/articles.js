@@ -13,7 +13,14 @@ const articleSchema = new Schema({
     title: {
         type: String,
         required: true
-    }
+    }, 
+    img: {
+        type: String
+    }, 
+    saved: {
+        type: Boolean,
+        default: false
+    },
 })
 
 const Articles = mongoose.model("Articles", articleSchema);
